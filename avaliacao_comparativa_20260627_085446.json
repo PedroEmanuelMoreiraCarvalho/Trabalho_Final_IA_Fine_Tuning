@@ -1,0 +1,196 @@
+{
+  "data": "2026-06-27T08:54:46.534080",
+  "modelos": {
+    "base": {
+      "nome_modelo": "Base Model (sem fine-tuning)",
+      "resultados": [
+        {
+          "id": 1,
+          "pergunta": "Qual algoritmo de ordenação possui complexidade média O(n log n) e utiliza divisão e conquista?",
+          "resposta_esperada": "O QuickSort utiliza divisão e conquista e possui complexidade média O(n log n).",
+          "resposta_gerada": "O algoritmo de ordenação que possui complexidade média O(n log n), utilizando divisão e conquista (ex: Merge Sort, Quick Sort), é o Quick Sort.",
+          "similaridade": 0.8234941959381104
+        },
+        {
+          "id": 2,
+          "pergunta": "Qual instituição de ensino produziu a maior parte dos materiais didáticos analisados?",
+          "resposta_esperada": "A Universidade Federal do Piauí (UFPI), através do Centro de Educação Aberta e a Distância (CEAD).",
+          "resposta_gerada": "Os materiais didáticos são da Universidade Federal do Piauí (UFPI), conforme indicado no material sobre 'Introdução à Bioinformática'.",
+          "similaridade": 0.5931531190872192
+        },
+        {
+          "id": 3,
+          "pergunta": "Qual a diferença entre TCP e UDP em relação à confiabilidade?",
+          "resposta_esperada": "TCP é orientado à conexão e fornece entrega confiável com controle de fluxo e congestionamento. UDP não garante entrega, sendo mais rápido e simples.",
+          "resposta_gerada": "TCP (Transmission Control Protocol) é uma camada de transporte que garante a confiabilidade do fluxo de dados através da entrega confirmável. Ele usa um controle de congestionamento para lidar com drops de pacotes. UDP (User Datagram Protocol) não garanta a confiabilidade: os dados são enviados apenas o quanto for possível no tempo real, sem garantia de entrega, perdida ou retraso.",
+          "similaridade": 0.7837647795677185
+        },
+        {
+          "id": 4,
+          "pergunta": "Em C, qual a diferença entre os operadores & e * quando usados com ponteiros?",
+          "resposta_esperada": "O operador & retorna o endereço de memória de uma variável, enquanto o operador * acessa ou altera o valor armazenado no endereço apontado.",
+          "resposta_gerada": "Os operadores '&' (ponteiro arroba) e '*' (asterisco) são dois deles. '&': retorna o endereço de memória do ponteiro. '*': aplica uma função ou operador ao valor armazenado no ponteiro.",
+          "similaridade": 0.7777979373931885
+        },
+        {
+          "id": 5,
+          "pergunta": "Qual estrutura de dados utiliza a política LIFO e quais são suas operações principais?",
+          "resposta_esperada": "A pilha utiliza LIFO (Last In First Out). Suas operações principais são push para inserir e pop para remover elementos.",
+          "resposta_gerada": "A Estrutura de Dados com Política FIFO (First-In-First-Out) é uma fila (queue). Ela possui as seguintes operações principais:\n\n1. enqueue(x): Adicionar um elemento x no final da fila.\n2. dequeue(): Remover o elemento que está na frente da fila e retorná-lo. Se a fila estiver vazia, retorna None ou um valor padrão.\n3. front(): Retorna o elemento atualmente na frente da fila sem removê-lo.\n4. size(): Retorna o número de elementos na fila.\n\nAlternativa B",
+          "similaridade": 0.5856843590736389
+        },
+        {
+          "id": 6,
+          "pergunta": "Qual protocolo é usado para criar uma conexão TCP e qual é a sequência do handshake?",
+          "resposta_esperada": "O TCP usa o three-way handshake: SYN, SYN-ACK e ACK.",
+          "resposta_gerada": "O protocolo TCP (Transmission Control Protocol) usa o handshake 3-way como padrão: (1) SYN from client -> server; (2) SYN from server -> client; (3) ACK from client to server with the new connection parameters.",
+          "similaridade": 0.8335341215133667
+        },
+        {
+          "id": 7,
+          "pergunta": "Em Haskell, qual função transforma cada elemento de uma lista aplicando uma função?",
+          "resposta_esperada": "A função map aplica uma função em cada elemento de uma lista e retorna uma nova lista.",
+          "resposta_gerada": "A função é `map`. Exemplo: `map (*2) [1,3]` resultaria em `[2,6]`.",
+          "similaridade": 0.6581473350524902
+        },
+        {
+          "id": 8,
+          "pergunta": "Qual tecnologia IoT possui baixo consumo, longo alcance e geralmente opera em frequências sub-GHz?",
+          "resposta_esperada": "LoRaWAN possui baixo consumo, longo alcance e opera normalmente em frequências sub-GHz.",
+          "resposta_gerada": "A tecnologia LoRa (Long Range) é a mais adequada para essa necessidade.",
+          "similaridade": 0.4137879014015198
+        },
+        {
+          "id": 9,
+          "pergunta": "Escreva um exemplo simples de uma função em Python que verifica se um número é par.",
+          "resposta_esperada": "def eh_par(n):\n    return n % 2 == 0",
+          "resposta_gerada": "Claro! A função `isPar` pode ser definida da seguinte forma:\n\n```python\ndef isPar(n):\n    return n % 2 == 0\n\n# Exemplo de uso:\nprint(isPar(4))   # Saída: True\nprint(isPar(5))   # Saída: False\n```\n\nA função retorna `True` se o número for par (i.e., divisível por 2 sem resto) e `False` caso contrário.",
+          "similaridade": 0.5366095304489136
+        },
+        {
+          "id": 10,
+          "pergunta": "Qual é a função do protocolo HTTP?",
+          "resposta_esperada": "HTTP é um protocolo da camada de aplicação usado para comunicação entre clientes e servidores na Web, permitindo transferência de recursos.",
+          "resposta_gerada": "A função principal do protocolo HTTP (Hypertext Transfer Protocol) é fornecer uma camada de comunicação entre um cliente e um servidor na Internet. Ele define padrões de conversão de dados, como métodos GET/POST para interação com recursos da web, além de especificar formatos de cabeçalho para informações sobre requisições e respostas.",
+          "similaridade": 0.8295045495033264
+        }
+      ],
+      "metricas": {
+        "media_similaridade": 0.6835477828979493,
+        "mediana_similaridade": 0.7179726362228394,
+        "desvio_padrao": 0.13966591834531902,
+        "min_similaridade": 0.4137879014015198,
+        "max_similaridade": 0.8335341215133667,
+        "total_questoes": 10
+      }
+    },
+    "fine_tuned": {
+      "nome_modelo": "Fine-Tuned Model",
+      "resultados": [
+        {
+          "id": 1,
+          "pergunta": "Qual algoritmo de ordenação possui complexidade média O(n log n) e utiliza divisão e conquista?",
+          "resposta_esperada": "O QuickSort utiliza divisão e conquista e possui complexidade média O(n log n).",
+          "resposta_gerada": "O algoritmo de ordenação que possui complexidade média O(n log n), utilizando divisão e conquista (com recursividade ou interação), é o QuickSort.",
+          "similaridade": 0.9023914337158203
+        },
+        {
+          "id": 2,
+          "pergunta": "Qual instituição de ensino produziu a maior parte dos materiais didáticos analisados?",
+          "resposta_esperada": "A Universidade Federal do Piauí (UFPI), através do Centro de Educação Aberta e a Distância (CEAD).",
+          "resposta_gerada": "Os materiais didáticos foram produzidos pela Universidade Federal do Piauí (UFPI) e por professores associados à Coordenação de Transferência de Tecnologia e Pesquisa e Extensão (CTTPX), incluindo o professor Carlos André Batista de Carvalho, da UFPI.",
+          "similaridade": 0.5513601899147034
+        },
+        {
+          "id": 3,
+          "pergunta": "Qual a diferença entre TCP e UDP em relação à confiabilidade?",
+          "resposta_esperada": "TCP é orientado à conexão e fornece entrega confiável com controle de fluxo e congestionamento. UDP não garante entrega, sendo mais rápido e simples.",
+          "resposta_gerada": "TCP (Transmission Control Protocol) oferece confiabilidade: ele garante que pacotes sejam entregues corretamente e de forma sequencial, com controle de erros e retransmissão automatica. UDP (User Datagram Protocol) é mais simples: ele não garanta entrega, sequência ou confirmação, focando em velocidade e eficiência, permitindo cabeçalhos reduzidos.",
+          "similaridade": 0.7741129398345947
+        },
+        {
+          "id": 4,
+          "pergunta": "Em C, qual a diferença entre os operadores & e * quando usados com ponteiros?",
+          "resposta_esperada": "O operador & retorna o endereço de memória de uma variável, enquanto o operador * acessa ou altera o valor armazenado no endereço apontado.",
+          "resposta_gerada": "O operador '&' (endereço de memória) é usado para obter o endereço de um dado na memória. Por exemplo: int x = 5; int* p = &x; printf(\"%d\", *p); // Imprime 5\n\nO operador '*' (desreferenciamento) é usado para acessar o valor armazenado no endereço do ponteiro. Por exemplo: int x = 5; int* p = &x; printf(\"%d\", *p); // Imprime 5 printf(\"%d\", *p++); // Incrementa p e imprime o novo valor, que é 6",
+          "similaridade": 0.5544027090072632
+        },
+        {
+          "id": 5,
+          "pergunta": "Qual estrutura de dados utiliza a política LIFO e quais são suas operações principais?",
+          "resposta_esperada": "A pilha utiliza LIFO (Last In First Out). Suas operações principais são push para inserir e pop para remover elementos.",
+          "resposta_gerada": "A política LIFO (Last In, First Out) é utilizada por estruturas como Pilha (`Stack`). As operações principais para uma pilha incluem: `push(item)` adiciona um item no topo da pilha; `pop()` remove o item do topo da pilha; `top()` retorna o item do topo sem removê-lo; e `isEmpty()`, que verifica se a pilha está vazia.",
+          "similaridade": 0.6671397089958191
+        },
+        {
+          "id": 6,
+          "pergunta": "Qual protocolo é usado para criar uma conexão TCP e qual é a sequência do handshake?",
+          "resposta_esperada": "O TCP usa o three-way handshake: SYN, SYN-ACK e ACK.",
+          "resposta_gerada": "O protocolo usado é TCP (Transmission Control Protocol). A sequência correta do handshake é: 1) SYN from server to client; 2) ACK from client to server confirming the SYN; 3) SYN from client to server acknowledging receipt of SYN and initiating connection establishment.",
+          "similaridade": 0.8142271041870117
+        },
+        {
+          "id": 7,
+          "pergunta": "Em Haskell, qual função transforma cada elemento de uma lista aplicando uma função?",
+          "resposta_esperada": "A função map aplica uma função em cada elemento de uma lista e retorna uma nova lista.",
+          "resposta_gerada": "A função é `map`. Exemplo: `map (+1) [1,2,3]` resultaria em `[2,3,4]`.",
+          "similaridade": 0.6325849294662476
+        },
+        {
+          "id": 8,
+          "pergunta": "Qual tecnologia IoT possui baixo consumo, longo alcance e geralmente opera em frequências sub-GHz?",
+          "resposta_esperada": "LoRaWAN possui baixo consumo, longo alcance e opera normalmente em frequências sub-GHz.",
+          "resposta_gerada": "A tecnologia de IoT com essas características é o LoRaWAN (Long Range Wide Area Network).",
+          "similaridade": 0.4540160894393921
+        },
+        {
+          "id": 9,
+          "pergunta": "Escreva um exemplo simples de uma função em Python que verifica se um número é par.",
+          "resposta_esperada": "def eh_par(n):\n    return n % 2 == 0",
+          "resposta_gerada": "Claro! A função pode ser definida da seguinte forma:\n\n```python\ndef eh_par(n):\n    return n % 2 == 0\n\n# Exemplo de uso:\nprint(eh_par(4))  # Saída: True\nprint(eh_par(5))  # Saída: False\n```\n\nA função `eh_par` recebe um número como argumento e retorna `True` se for par (i.e., o resto da divisão por 2 for zero) ou `False` caso contrário.",
+          "similaridade": 0.7570886611938477
+        },
+        {
+          "id": 10,
+          "pergunta": "Qual é a função do protocolo HTTP?",
+          "resposta_esperada": "HTTP é um protocolo da camada de aplicação usado para comunicação entre clientes e servidores na Web, permitindo transferência de recursos.",
+          "resposta_gerada": "A função principal de HTTP (Hypertext Transfer Protocol) é realizar requisições e respostas entre um cliente (como uma máquina web de escritório ou smartphone) e um servidor (como o servidor www.google.com).",
+          "similaridade": 0.7776379585266113
+        }
+      ],
+      "metricas": {
+        "media_similaridade": 0.6884961724281311,
+        "mediana_similaridade": 0.7121141850948334,
+        "desvio_padrao": 0.13300048044188825,
+        "min_similaridade": 0.4540160894393921,
+        "max_similaridade": 0.9023914337158203,
+        "total_questoes": 10
+      }
+    }
+  },
+  "comparacao": {
+    "base_model": {
+      "media_similaridade": 0.6835477828979493,
+      "mediana_similaridade": 0.7179726362228394,
+      "desvio_padrao": 0.13966591834531902,
+      "min_similaridade": 0.4137879014015198,
+      "max_similaridade": 0.8335341215133667,
+      "total_questoes": 10
+    },
+    "fine_tuned_model": {
+      "media_similaridade": 0.6884961724281311,
+      "mediana_similaridade": 0.7121141850948334,
+      "desvio_padrao": 0.13300048044188825,
+      "min_similaridade": 0.4540160894393921,
+      "max_similaridade": 0.9023914337158203,
+      "total_questoes": 10
+    },
+    "melhorias": {
+      "media_similaridade": 0.00494838953018184,
+      "mediana_similaridade": -0.0058584511280059814,
+      "min_similaridade": 0.040228188037872314,
+      "max_similaridade": 0.06885731220245361,
+      "desvio_padrao": 0.006665437903430771
+    }
+  }
+}

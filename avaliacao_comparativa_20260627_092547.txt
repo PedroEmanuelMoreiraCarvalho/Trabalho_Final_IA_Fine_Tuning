@@ -1,0 +1,126 @@
+=== AVALIAÇÃO COMPARATIVA DE MODELOS ===
+Data: 2026-06-27 09:25:47
+============================================================
+
+MÉTRICAS GERAIS
+------------------------------------------------------------
+Métrica                        Base Model           Fine-Tuned          
+----------------------------------------------------------------------
+Media similaridade             0.6570               0.7003              
+Mediana similaridade           0.7501               0.7324              
+Min similaridade               0.2660               0.4426              
+Max similaridade               0.8229               0.8470              
+Desvio padrao                  0.1864               0.1140              
+
+
+DETALHES POR QUESTÃO
+------------------------------------------------------------
+
+[Questão 1]
+Pergunta: Qual algoritmo de ordenação possui complexidade média O(n log n) e utiliza divisão e conquista?
+Resposta Esperada: O QuickSort utiliza divisão e conquista e possui complexidade média O(n log n).
+Base Model: O algoritmo de ordenação que possui complexidade média O(n log n), utilizando divisão e conquista (como o Merge Sort ou Quick Sort), é o Quick Sort quando implementado com um otimizador do pivot (ex: Quick Sort In-place).
+Fine-Tuned: O algoritmo de ordenação com complexidade média O(n log n) que utiliza divisão e conquista é o Quick Sort (Shellsort sem fatores).
+Similaridade Base: 0.7743
+Similaridade FT: 0.8470
+--------------------------------------------------
+
+[Questão 2]
+Pergunta: Qual é a fonte principal utilizada como referência para materiais de Redes de Computadores?
+Resposta Esperada: O livro 'Redes de Computadores e a Internet: Uma Abordagem Top-Down', de James Kurose e Keith Ross, é uma das principais referências.
+Base Model: A maior parte dos materiais sobre redes de computadores é baseada nos livros de Douglas Comer e James F. Kurose & Keith W. Ross. Esses títulos são fundamentais para entender conceitos abstratos como caminhos de rotação, congestionamento, protocolos TCP/IP e serviços de rede.
+Fine-Tuned: A fonte principal usada como referência para materiais sobre Redes de Computadores é o livro 'Computer Networks' de James F. Kurose e Keith W. Ross (6ª edição), publicado pela Thomson Course Technology/Bestsellers em 2013. O livro aborda conceitos, protocolos e padrões para redes de computadores, sendo amplamente utilizado como texto didático nos cursos de redes modernos.
+Similaridade Base: 0.6076
+Similaridade FT: 0.6422
+--------------------------------------------------
+
+[Questão 3]
+Pergunta: Qual a diferença entre TCP e UDP em relação à confiabilidade?
+Resposta Esperada: TCP é orientado à conexão e fornece entrega confiável com controle de fluxo e congestionamento. UDP não garante entrega, sendo mais rápido e simples.
+Base Model: TCP (Transmission Control Protocol) fornece uma garantia de confiabilidade: os dados são enviados com entrega confirmada, retransmissão automatica se necessário e controle de erros. UDP (User Datagram Protocol) não garante a confiabilidade; os dados são transmitidos de forma assíncrona, sem controle de erros ou retransmissões, sendo mais rápido e geralmente usado para aplicações que podem lidar com perdas de dados.
+Fine-Tuned: TCP (Transmission Control Protocol) oferece confiabilidade garantida: dados são enviados com controle de erros, retransmissão automática e checksums para detectar erros. UDP (User Datagram Protocol) é não confiável; apenas o tempo real do envio/recebimento é contado, sem controle de erros ou retransmissões.
+Similaridade Base: 0.7781
+Similaridade FT: 0.7658
+--------------------------------------------------
+
+[Questão 4]
+Pergunta: Em C, qual a diferença entre os operadores & e * quando usados com ponteiros?
+Resposta Esperada: O operador & retorna o endereço de memória de uma variável, enquanto o operador * acessa ou altera o valor armazenado no endereço apontado.
+Base Model: Os operadores '&' e '*' são fundamentais para manipulação de ponteiros em C. '&': O operador '&' retorna o endereço de memória do ponteiro (ex: int* ptr = &a; printf("%p", ptr); imprime "%p"). '*': O operador '*' é usado para desempacotar um ponteiro, retornando o valor armazenado na área de endereçamento que ele aponta (ex: int x = *ptr;).
+Fine-Tuned: No contexto de ponteiros em C, os operadores '&' (atrasado) e '*' (descrente) têm funções distintas:
+
+1. '&': Isso retorna o endereço de memória do ponteiro. Por exemplo, se você tem `int *p = &x;`, então `&p` retornaria `(int *) x`.
+
+2. '*': Isso retorna o valor armazenado no endereço especificado pelo ponteiro. Por exemplo, se `*p = 5;`, então `*p` retornaria 5.
+
+O que eles fazem juntos?
+
+- Se você tiver um ponteiro `int *p;`, pode usar `p++;` para incrementar o ponteiro.
+  
+- Para atribuir um novo valor a uma variável através de um ponteiro, use `*(p + i) = v;`. Ex: `*(p + 0) = 42;` atribui 42 ao primeiro elemento do array.
+
+- O operador 'dereferenciamento' é `*p;`. Ele lê o valor da variável referenciada pelo ponteiro atualmente apontado.
+
+- No caso de arrays, como `[i]`, ele desconsidera o escopo dos sub-ponteiros, pois `p[i]` significa `*(p + i)`.
+
+- Em loops, como `for(int i=0; i<5; i++)`, o operador '(' não está associado à função `printf()` ou `scanf()`, mas sim ao loop for, indicando o início do intervalo de iterações.
+
+São essenciais entender seus usos separados e combinados para programação eficiente e correta em C.
+Similaridade Base: 0.6519
+Similaridade FT: 0.5975
+--------------------------------------------------
+
+[Questão 5]
+Pergunta: Qual estrutura de dados utiliza a política LIFO e quais são suas operações principais?
+Resposta Esperada: A pilha utiliza LIFO (Last In First Out). Suas operações principais são push para inserir e pop para remover elementos.
+Base Model: A Estrutura de Dados Pilha (Last-In-First-Out - FIFO) utiliza a política LIFO. Sua principal operação é o push (inserção), que adiciona um elemento no topo da pilha. A operação pop (remoção) remove o elemento do topo da pilha, levantando a questão de como lidar com elementos removidos sem terem sido preenchidos completamente.
+Fine-Tuned: A política LIFO (Last-In-First-Out) é utilizada por pilhas, como em funções recursivas ou na montagem de subprogramas. Sua principal operação é `push(x)` para inserir um elemento no topo da pilha (`x` sendo o argumento).
+Similaridade Base: 0.7259
+Similaridade FT: 0.6538
+--------------------------------------------------
+
+[Questão 6]
+Pergunta: Qual protocolo é usado para criar uma conexão TCP e qual é a sequência do handshake?
+Resposta Esperada: O TCP usa o three-way handshake: SYN, SYN-ACK e ACK.
+Base Model: O protocolo TCP (Transmission Control Protocol) usa um handshake de três passos para estabelecer uma conexão: 1) SYN (Synchronize), onde o servidor responde com ACK; 2) SYN/ACK (Acknowledge), onde o cliente responde com ACK; 3) ACK (Acknowledgment), onde ambos os lados confirmam que o handshake foi bem-sucedido.
+Fine-Tuned: O protocolo TCP (Transmission Control Protocol) usa um handshake de três passos para estabelecer uma conexão: 'syn-ack', 'establish' e 'fin'.
+Similaridade Base: 0.8041
+Similaridade FT: 0.8182
+--------------------------------------------------
+
+[Questão 7]
+Pergunta: Quais as disciplinas ministradas pelo professor Raimundo Santos Moura?
+Resposta Esperada: O professor Raimundo Santos Moura ministra as disciplinas: Estrutura de Dados, Compiladores e Tópicos em I.A.
+Base Model: As disciplinas ministradas por Raimundo Santos Moura incluem: Computação Gráfica (DC/CCN068), Engenharia de Software (DC/CCN057 e DC/CCN143), Redes de Computadores (DC/CCN029) e Sistemas Embarcados (DC/CCN072).
+Fine-Tuned: A disciplina 'Tópicos em Bioinformática' é ministrada por Raimundo Santos Moura.
+Similaridade Base: 0.2660
+Similaridade FT: 0.7510
+--------------------------------------------------
+
+[Questão 8]
+Pergunta: Qual tecnologia IoT possui baixo consumo, longo alcance e geralmente opera em frequências sub-GHz?
+Resposta Esperada: LoRaWAN possui baixo consumo, longo alcance e opera normalmente em frequências sub-GHz.
+Base Model: A tecnologia LoRa (Long Range) é uma das mais adequadas para essa característica.
+Fine-Tuned: A tecnologia IoT com essas características é o LoRa (Long Range).
+Similaridade Base: 0.3521
+Similaridade FT: 0.4426
+--------------------------------------------------
+
+[Questão 9]
+Pergunta: Escreva um exemplo simples de uma função em Python que verifica se um número é par.
+Resposta Esperada: def eh_par(n):
+    return n % 2 == 0
+Base Model: A função pode ser definida como: `def eh_par(n): return n % 2 == 0`.
+Fine-Tuned: A função pode ser definida como `def is_par(n): return n % 2 == 0`.
+Similaridade Base: 0.8229
+Similaridade FT: 0.7138
+--------------------------------------------------
+
+[Questão 10]
+Pergunta: Qual é a função do protocolo HTTP?
+Resposta Esperada: HTTP é um protocolo da camada de aplicação usado para comunicação entre clientes e servidores na Web, permitindo transferência de recursos.
+Base Model: A função principal de HTTP (Hypertext Transfer Protocol) é transferir arquivos da Web entre o navegador e os servidores web.
+Fine-Tuned: A função do protocolo HTTP (Hypertext Transfer Protocol) é realizar requisições e respostas entre um cliente (como uma página web ou aplicativo mobile) e um servidor da Internet, transferindo arquivos de texto, imagens e outros dados através da rede.
+Similaridade Base: 0.7870
+Similaridade FT: 0.7713
+--------------------------------------------------

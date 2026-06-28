@@ -1,0 +1,196 @@
+{
+  "data": "2026-06-27T09:25:47.634580",
+  "modelos": {
+    "base": {
+      "nome_modelo": "Base Model (sem fine-tuning)",
+      "resultados": [
+        {
+          "id": 1,
+          "pergunta": "Qual algoritmo de ordenação possui complexidade média O(n log n) e utiliza divisão e conquista?",
+          "resposta_esperada": "O QuickSort utiliza divisão e conquista e possui complexidade média O(n log n).",
+          "resposta_gerada": "O algoritmo de ordenação que possui complexidade média O(n log n), utilizando divisão e conquista (como o Merge Sort ou Quick Sort), é o Quick Sort quando implementado com um otimizador do pivot (ex: Quick Sort In-place).",
+          "similaridade": 0.7742863893508911
+        },
+        {
+          "id": 2,
+          "pergunta": "Qual é a fonte principal utilizada como referência para materiais de Redes de Computadores?",
+          "resposta_esperada": "O livro 'Redes de Computadores e a Internet: Uma Abordagem Top-Down', de James Kurose e Keith Ross, é uma das principais referências.",
+          "resposta_gerada": "A maior parte dos materiais sobre redes de computadores é baseada nos livros de Douglas Comer e James F. Kurose & Keith W. Ross. Esses títulos são fundamentais para entender conceitos abstratos como caminhos de rotação, congestionamento, protocolos TCP/IP e serviços de rede.",
+          "similaridade": 0.6076169013977051
+        },
+        {
+          "id": 3,
+          "pergunta": "Qual a diferença entre TCP e UDP em relação à confiabilidade?",
+          "resposta_esperada": "TCP é orientado à conexão e fornece entrega confiável com controle de fluxo e congestionamento. UDP não garante entrega, sendo mais rápido e simples.",
+          "resposta_gerada": "TCP (Transmission Control Protocol) fornece uma garantia de confiabilidade: os dados são enviados com entrega confirmada, retransmissão automatica se necessário e controle de erros. UDP (User Datagram Protocol) não garante a confiabilidade; os dados são transmitidos de forma assíncrona, sem controle de erros ou retransmissões, sendo mais rápido e geralmente usado para aplicações que podem lidar com perdas de dados.",
+          "similaridade": 0.7780965566635132
+        },
+        {
+          "id": 4,
+          "pergunta": "Em C, qual a diferença entre os operadores & e * quando usados com ponteiros?",
+          "resposta_esperada": "O operador & retorna o endereço de memória de uma variável, enquanto o operador * acessa ou altera o valor armazenado no endereço apontado.",
+          "resposta_gerada": "Os operadores '&' e '*' são fundamentais para manipulação de ponteiros em C. '&': O operador '&' retorna o endereço de memória do ponteiro (ex: int* ptr = &a; printf(\"%p\", ptr); imprime \"%p\"). '*': O operador '*' é usado para desempacotar um ponteiro, retornando o valor armazenado na área de endereçamento que ele aponta (ex: int x = *ptr;).",
+          "similaridade": 0.651915431022644
+        },
+        {
+          "id": 5,
+          "pergunta": "Qual estrutura de dados utiliza a política LIFO e quais são suas operações principais?",
+          "resposta_esperada": "A pilha utiliza LIFO (Last In First Out). Suas operações principais são push para inserir e pop para remover elementos.",
+          "resposta_gerada": "A Estrutura de Dados Pilha (Last-In-First-Out - FIFO) utiliza a política LIFO. Sua principal operação é o push (inserção), que adiciona um elemento no topo da pilha. A operação pop (remoção) remove o elemento do topo da pilha, levantando a questão de como lidar com elementos removidos sem terem sido preenchidos completamente.",
+          "similaridade": 0.7258619070053101
+        },
+        {
+          "id": 6,
+          "pergunta": "Qual protocolo é usado para criar uma conexão TCP e qual é a sequência do handshake?",
+          "resposta_esperada": "O TCP usa o three-way handshake: SYN, SYN-ACK e ACK.",
+          "resposta_gerada": "O protocolo TCP (Transmission Control Protocol) usa um handshake de três passos para estabelecer uma conexão: 1) SYN (Synchronize), onde o servidor responde com ACK; 2) SYN/ACK (Acknowledge), onde o cliente responde com ACK; 3) ACK (Acknowledgment), onde ambos os lados confirmam que o handshake foi bem-sucedido.",
+          "similaridade": 0.8041340112686157
+        },
+        {
+          "id": 7,
+          "pergunta": "Quais as disciplinas ministradas pelo professor Raimundo Santos Moura?",
+          "resposta_esperada": "O professor Raimundo Santos Moura ministra as disciplinas: Estrutura de Dados, Compiladores e Tópicos em I.A.",
+          "resposta_gerada": "As disciplinas ministradas por Raimundo Santos Moura incluem: Computação Gráfica (DC/CCN068), Engenharia de Software (DC/CCN057 e DC/CCN143), Redes de Computadores (DC/CCN029) e Sistemas Embarcados (DC/CCN072).",
+          "similaridade": 0.2659660279750824
+        },
+        {
+          "id": 8,
+          "pergunta": "Qual tecnologia IoT possui baixo consumo, longo alcance e geralmente opera em frequências sub-GHz?",
+          "resposta_esperada": "LoRaWAN possui baixo consumo, longo alcance e opera normalmente em frequências sub-GHz.",
+          "resposta_gerada": "A tecnologia LoRa (Long Range) é uma das mais adequadas para essa característica.",
+          "similaridade": 0.35208916664123535
+        },
+        {
+          "id": 9,
+          "pergunta": "Escreva um exemplo simples de uma função em Python que verifica se um número é par.",
+          "resposta_esperada": "def eh_par(n):\n    return n % 2 == 0",
+          "resposta_gerada": "A função pode ser definida como: `def eh_par(n): return n % 2 == 0`.",
+          "similaridade": 0.8229082822799683
+        },
+        {
+          "id": 10,
+          "pergunta": "Qual é a função do protocolo HTTP?",
+          "resposta_esperada": "HTTP é um protocolo da camada de aplicação usado para comunicação entre clientes e servidores na Web, permitindo transferência de recursos.",
+          "resposta_gerada": "A função principal de HTTP (Hypertext Transfer Protocol) é transferir arquivos da Web entre o navegador e os servidores web.",
+          "similaridade": 0.7870307564735413
+        }
+      ],
+      "metricas": {
+        "media_similaridade": 0.6569905430078506,
+        "mediana_similaridade": 0.7500741481781006,
+        "desvio_padrao": 0.18643688861953348,
+        "min_similaridade": 0.2659660279750824,
+        "max_similaridade": 0.8229082822799683,
+        "total_questoes": 10
+      }
+    },
+    "fine_tuned": {
+      "nome_modelo": "Fine-Tuned Model",
+      "resultados": [
+        {
+          "id": 1,
+          "pergunta": "Qual algoritmo de ordenação possui complexidade média O(n log n) e utiliza divisão e conquista?",
+          "resposta_esperada": "O QuickSort utiliza divisão e conquista e possui complexidade média O(n log n).",
+          "resposta_gerada": "O algoritmo de ordenação com complexidade média O(n log n) que utiliza divisão e conquista é o Quick Sort (Shellsort sem fatores).",
+          "similaridade": 0.8469680547714233
+        },
+        {
+          "id": 2,
+          "pergunta": "Qual é a fonte principal utilizada como referência para materiais de Redes de Computadores?",
+          "resposta_esperada": "O livro 'Redes de Computadores e a Internet: Uma Abordagem Top-Down', de James Kurose e Keith Ross, é uma das principais referências.",
+          "resposta_gerada": "A fonte principal usada como referência para materiais sobre Redes de Computadores é o livro 'Computer Networks' de James F. Kurose e Keith W. Ross (6ª edição), publicado pela Thomson Course Technology/Bestsellers em 2013. O livro aborda conceitos, protocolos e padrões para redes de computadores, sendo amplamente utilizado como texto didático nos cursos de redes modernos.",
+          "similaridade": 0.642244815826416
+        },
+        {
+          "id": 3,
+          "pergunta": "Qual a diferença entre TCP e UDP em relação à confiabilidade?",
+          "resposta_esperada": "TCP é orientado à conexão e fornece entrega confiável com controle de fluxo e congestionamento. UDP não garante entrega, sendo mais rápido e simples.",
+          "resposta_gerada": "TCP (Transmission Control Protocol) oferece confiabilidade garantida: dados são enviados com controle de erros, retransmissão automática e checksums para detectar erros. UDP (User Datagram Protocol) é não confiável; apenas o tempo real do envio/recebimento é contado, sem controle de erros ou retransmissões.",
+          "similaridade": 0.7658003568649292
+        },
+        {
+          "id": 4,
+          "pergunta": "Em C, qual a diferença entre os operadores & e * quando usados com ponteiros?",
+          "resposta_esperada": "O operador & retorna o endereço de memória de uma variável, enquanto o operador * acessa ou altera o valor armazenado no endereço apontado.",
+          "resposta_gerada": "No contexto de ponteiros em C, os operadores '&' (atrasado) e '*' (descrente) têm funções distintas:\n\n1. '&': Isso retorna o endereço de memória do ponteiro. Por exemplo, se você tem `int *p = &x;`, então `&p` retornaria `(int *) x`.\n\n2. '*': Isso retorna o valor armazenado no endereço especificado pelo ponteiro. Por exemplo, se `*p = 5;`, então `*p` retornaria 5.\n\nO que eles fazem juntos?\n\n- Se você tiver um ponteiro `int *p;`, pode usar `p++;` para incrementar o ponteiro.\n  \n- Para atribuir um novo valor a uma variável através de um ponteiro, use `*(p + i) = v;`. Ex: `*(p + 0) = 42;` atribui 42 ao primeiro elemento do array.\n\n- O operador 'dereferenciamento' é `*p;`. Ele lê o valor da variável referenciada pelo ponteiro atualmente apontado.\n\n- No caso de arrays, como `[i]`, ele desconsidera o escopo dos sub-ponteiros, pois `p[i]` significa `*(p + i)`.\n\n- Em loops, como `for(int i=0; i<5; i++)`, o operador '(' não está associado à função `printf()` ou `scanf()`, mas sim ao loop for, indicando o início do intervalo de iterações.\n\nSão essenciais entender seus usos separados e combinados para programação eficiente e correta em C.",
+          "similaridade": 0.597453773021698
+        },
+        {
+          "id": 5,
+          "pergunta": "Qual estrutura de dados utiliza a política LIFO e quais são suas operações principais?",
+          "resposta_esperada": "A pilha utiliza LIFO (Last In First Out). Suas operações principais são push para inserir e pop para remover elementos.",
+          "resposta_gerada": "A política LIFO (Last-In-First-Out) é utilizada por pilhas, como em funções recursivas ou na montagem de subprogramas. Sua principal operação é `push(x)` para inserir um elemento no topo da pilha (`x` sendo o argumento).",
+          "similaridade": 0.6538132429122925
+        },
+        {
+          "id": 6,
+          "pergunta": "Qual protocolo é usado para criar uma conexão TCP e qual é a sequência do handshake?",
+          "resposta_esperada": "O TCP usa o three-way handshake: SYN, SYN-ACK e ACK.",
+          "resposta_gerada": "O protocolo TCP (Transmission Control Protocol) usa um handshake de três passos para estabelecer uma conexão: 'syn-ack', 'establish' e 'fin'.",
+          "similaridade": 0.8182164430618286
+        },
+        {
+          "id": 7,
+          "pergunta": "Quais as disciplinas ministradas pelo professor Raimundo Santos Moura?",
+          "resposta_esperada": "O professor Raimundo Santos Moura ministra as disciplinas: Estrutura de Dados, Compiladores e Tópicos em I.A.",
+          "resposta_gerada": "A disciplina 'Tópicos em Bioinformática' é ministrada por Raimundo Santos Moura.",
+          "similaridade": 0.7510219812393188
+        },
+        {
+          "id": 8,
+          "pergunta": "Qual tecnologia IoT possui baixo consumo, longo alcance e geralmente opera em frequências sub-GHz?",
+          "resposta_esperada": "LoRaWAN possui baixo consumo, longo alcance e opera normalmente em frequências sub-GHz.",
+          "resposta_gerada": "A tecnologia IoT com essas características é o LoRa (Long Range).",
+          "similaridade": 0.4425513744354248
+        },
+        {
+          "id": 9,
+          "pergunta": "Escreva um exemplo simples de uma função em Python que verifica se um número é par.",
+          "resposta_esperada": "def eh_par(n):\n    return n % 2 == 0",
+          "resposta_gerada": "A função pode ser definida como `def is_par(n): return n % 2 == 0`.",
+          "similaridade": 0.7138177156448364
+        },
+        {
+          "id": 10,
+          "pergunta": "Qual é a função do protocolo HTTP?",
+          "resposta_esperada": "HTTP é um protocolo da camada de aplicação usado para comunicação entre clientes e servidores na Web, permitindo transferência de recursos.",
+          "resposta_gerada": "A função do protocolo HTTP (Hypertext Transfer Protocol) é realizar requisições e respostas entre um cliente (como uma página web ou aplicativo mobile) e um servidor da Internet, transferindo arquivos de texto, imagens e outros dados através da rede.",
+          "similaridade": 0.7713289260864258
+        }
+      ],
+      "metricas": {
+        "media_similaridade": 0.7003216683864594,
+        "mediana_similaridade": 0.7324198484420776,
+        "desvio_padrao": 0.11403936935338504,
+        "min_similaridade": 0.4425513744354248,
+        "max_similaridade": 0.8469680547714233,
+        "total_questoes": 10
+      }
+    }
+  },
+  "comparacao": {
+    "base_model": {
+      "media_similaridade": 0.6569905430078506,
+      "mediana_similaridade": 0.7500741481781006,
+      "desvio_padrao": 0.18643688861953348,
+      "min_similaridade": 0.2659660279750824,
+      "max_similaridade": 0.8229082822799683,
+      "total_questoes": 10
+    },
+    "fine_tuned_model": {
+      "media_similaridade": 0.7003216683864594,
+      "mediana_similaridade": 0.7324198484420776,
+      "desvio_padrao": 0.11403936935338504,
+      "min_similaridade": 0.4425513744354248,
+      "max_similaridade": 0.8469680547714233,
+      "total_questoes": 10
+    },
+    "melhorias": {
+      "media_similaridade": 0.043331125378608726,
+      "mediana_similaridade": -0.01765429973602295,
+      "min_similaridade": 0.1765853464603424,
+      "max_similaridade": 0.024059772491455078,
+      "desvio_padrao": 0.07239751926614843
+    }
+  }
+}

@@ -1,0 +1,139 @@
+=== AVALIAÇÃO COMPARATIVA DE MODELOS ===
+Data: 2026-06-27 08:54:46
+============================================================
+
+MÉTRICAS GERAIS
+------------------------------------------------------------
+Métrica                        Base Model           Fine-Tuned          
+----------------------------------------------------------------------
+Media similaridade             0.6835               0.6885              
+Mediana similaridade           0.7180               0.7121              
+Min similaridade               0.4138               0.4540              
+Max similaridade               0.8335               0.9024              
+Desvio padrao                  0.1397               0.1330              
+
+
+DETALHES POR QUESTÃO
+------------------------------------------------------------
+
+[Questão 1]
+Pergunta: Qual algoritmo de ordenação possui complexidade média O(n log n) e utiliza divisão e conquista?
+Resposta Esperada: O QuickSort utiliza divisão e conquista e possui complexidade média O(n log n).
+Base Model: O algoritmo de ordenação que possui complexidade média O(n log n), utilizando divisão e conquista (ex: Merge Sort, Quick Sort), é o Quick Sort.
+Fine-Tuned: O algoritmo de ordenação que possui complexidade média O(n log n), utilizando divisão e conquista (com recursividade ou interação), é o QuickSort.
+Similaridade Base: 0.8235
+Similaridade FT: 0.9024
+--------------------------------------------------
+
+[Questão 2]
+Pergunta: Qual instituição de ensino produziu a maior parte dos materiais didáticos analisados?
+Resposta Esperada: A Universidade Federal do Piauí (UFPI), através do Centro de Educação Aberta e a Distância (CEAD).
+Base Model: Os materiais didáticos são da Universidade Federal do Piauí (UFPI), conforme indicado no material sobre 'Introdução à Bioinformática'.
+Fine-Tuned: Os materiais didáticos foram produzidos pela Universidade Federal do Piauí (UFPI) e por professores associados à Coordenação de Transferência de Tecnologia e Pesquisa e Extensão (CTTPX), incluindo o professor Carlos André Batista de Carvalho, da UFPI.
+Similaridade Base: 0.5932
+Similaridade FT: 0.5514
+--------------------------------------------------
+
+[Questão 3]
+Pergunta: Qual a diferença entre TCP e UDP em relação à confiabilidade?
+Resposta Esperada: TCP é orientado à conexão e fornece entrega confiável com controle de fluxo e congestionamento. UDP não garante entrega, sendo mais rápido e simples.
+Base Model: TCP (Transmission Control Protocol) é uma camada de transporte que garante a confiabilidade do fluxo de dados através da entrega confirmável. Ele usa um controle de congestionamento para lidar com drops de pacotes. UDP (User Datagram Protocol) não garanta a confiabilidade: os dados são enviados apenas o quanto for possível no tempo real, sem garantia de entrega, perdida ou retraso.
+Fine-Tuned: TCP (Transmission Control Protocol) oferece confiabilidade: ele garante que pacotes sejam entregues corretamente e de forma sequencial, com controle de erros e retransmissão automatica. UDP (User Datagram Protocol) é mais simples: ele não garanta entrega, sequência ou confirmação, focando em velocidade e eficiência, permitindo cabeçalhos reduzidos.
+Similaridade Base: 0.7838
+Similaridade FT: 0.7741
+--------------------------------------------------
+
+[Questão 4]
+Pergunta: Em C, qual a diferença entre os operadores & e * quando usados com ponteiros?
+Resposta Esperada: O operador & retorna o endereço de memória de uma variável, enquanto o operador * acessa ou altera o valor armazenado no endereço apontado.
+Base Model: Os operadores '&' (ponteiro arroba) e '*' (asterisco) são dois deles. '&': retorna o endereço de memória do ponteiro. '*': aplica uma função ou operador ao valor armazenado no ponteiro.
+Fine-Tuned: O operador '&' (endereço de memória) é usado para obter o endereço de um dado na memória. Por exemplo: int x = 5; int* p = &x; printf("%d", *p); // Imprime 5
+
+O operador '*' (desreferenciamento) é usado para acessar o valor armazenado no endereço do ponteiro. Por exemplo: int x = 5; int* p = &x; printf("%d", *p); // Imprime 5 printf("%d", *p++); // Incrementa p e imprime o novo valor, que é 6
+Similaridade Base: 0.7778
+Similaridade FT: 0.5544
+--------------------------------------------------
+
+[Questão 5]
+Pergunta: Qual estrutura de dados utiliza a política LIFO e quais são suas operações principais?
+Resposta Esperada: A pilha utiliza LIFO (Last In First Out). Suas operações principais são push para inserir e pop para remover elementos.
+Base Model: A Estrutura de Dados com Política FIFO (First-In-First-Out) é uma fila (queue). Ela possui as seguintes operações principais:
+
+1. enqueue(x): Adicionar um elemento x no final da fila.
+2. dequeue(): Remover o elemento que está na frente da fila e retorná-lo. Se a fila estiver vazia, retorna None ou um valor padrão.
+3. front(): Retorna o elemento atualmente na frente da fila sem removê-lo.
+4. size(): Retorna o número de elementos na fila.
+
+Alternativa B
+Fine-Tuned: A política LIFO (Last In, First Out) é utilizada por estruturas como Pilha (`Stack`). As operações principais para uma pilha incluem: `push(item)` adiciona um item no topo da pilha; `pop()` remove o item do topo da pilha; `top()` retorna o item do topo sem removê-lo; e `isEmpty()`, que verifica se a pilha está vazia.
+Similaridade Base: 0.5857
+Similaridade FT: 0.6671
+--------------------------------------------------
+
+[Questão 6]
+Pergunta: Qual protocolo é usado para criar uma conexão TCP e qual é a sequência do handshake?
+Resposta Esperada: O TCP usa o three-way handshake: SYN, SYN-ACK e ACK.
+Base Model: O protocolo TCP (Transmission Control Protocol) usa o handshake 3-way como padrão: (1) SYN from client -> server; (2) SYN from server -> client; (3) ACK from client to server with the new connection parameters.
+Fine-Tuned: O protocolo usado é TCP (Transmission Control Protocol). A sequência correta do handshake é: 1) SYN from server to client; 2) ACK from client to server confirming the SYN; 3) SYN from client to server acknowledging receipt of SYN and initiating connection establishment.
+Similaridade Base: 0.8335
+Similaridade FT: 0.8142
+--------------------------------------------------
+
+[Questão 7]
+Pergunta: Em Haskell, qual função transforma cada elemento de uma lista aplicando uma função?
+Resposta Esperada: A função map aplica uma função em cada elemento de uma lista e retorna uma nova lista.
+Base Model: A função é `map`. Exemplo: `map (*2) [1,3]` resultaria em `[2,6]`.
+Fine-Tuned: A função é `map`. Exemplo: `map (+1) [1,2,3]` resultaria em `[2,3,4]`.
+Similaridade Base: 0.6581
+Similaridade FT: 0.6326
+--------------------------------------------------
+
+[Questão 8]
+Pergunta: Qual tecnologia IoT possui baixo consumo, longo alcance e geralmente opera em frequências sub-GHz?
+Resposta Esperada: LoRaWAN possui baixo consumo, longo alcance e opera normalmente em frequências sub-GHz.
+Base Model: A tecnologia LoRa (Long Range) é a mais adequada para essa necessidade.
+Fine-Tuned: A tecnologia de IoT com essas características é o LoRaWAN (Long Range Wide Area Network).
+Similaridade Base: 0.4138
+Similaridade FT: 0.4540
+--------------------------------------------------
+
+[Questão 9]
+Pergunta: Escreva um exemplo simples de uma função em Python que verifica se um número é par.
+Resposta Esperada: def eh_par(n):
+    return n % 2 == 0
+Base Model: Claro! A função `isPar` pode ser definida da seguinte forma:
+
+```python
+def isPar(n):
+    return n % 2 == 0
+
+# Exemplo de uso:
+print(isPar(4))   # Saída: True
+print(isPar(5))   # Saída: False
+```
+
+A função retorna `True` se o número for par (i.e., divisível por 2 sem resto) e `False` caso contrário.
+Fine-Tuned: Claro! A função pode ser definida da seguinte forma:
+
+```python
+def eh_par(n):
+    return n % 2 == 0
+
+# Exemplo de uso:
+print(eh_par(4))  # Saída: True
+print(eh_par(5))  # Saída: False
+```
+
+A função `eh_par` recebe um número como argumento e retorna `True` se for par (i.e., o resto da divisão por 2 for zero) ou `False` caso contrário.
+Similaridade Base: 0.5366
+Similaridade FT: 0.7571
+--------------------------------------------------
+
+[Questão 10]
+Pergunta: Qual é a função do protocolo HTTP?
+Resposta Esperada: HTTP é um protocolo da camada de aplicação usado para comunicação entre clientes e servidores na Web, permitindo transferência de recursos.
+Base Model: A função principal do protocolo HTTP (Hypertext Transfer Protocol) é fornecer uma camada de comunicação entre um cliente e um servidor na Internet. Ele define padrões de conversão de dados, como métodos GET/POST para interação com recursos da web, além de especificar formatos de cabeçalho para informações sobre requisições e respostas.
+Fine-Tuned: A função principal de HTTP (Hypertext Transfer Protocol) é realizar requisições e respostas entre um cliente (como uma máquina web de escritório ou smartphone) e um servidor (como o servidor www.google.com).
+Similaridade Base: 0.8295
+Similaridade FT: 0.7776
+--------------------------------------------------

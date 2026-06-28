@@ -1,0 +1,126 @@
+{
+  "data": "2026-06-27T09:44:04.832302",
+  "modelos": {
+    "base": {
+      "nome_modelo": "Base Model (sem fine-tuning)",
+      "resultados": [
+        {
+          "id": 1,
+          "pergunta": "Quais matérias são ministradas pelo professor André Soares?",
+          "resposta_esperada": "O professor André Soares ministra as disciplinas: Redes de Computadores.",
+          "resposta_gerada": "André Soares ministra as seguintes materias: Teoria da Computação (CCN0471), Redes de Computadores e Sistemas embarcados (CCN5683), Engenharia de Software (CCN0295), Introdução à Computação (CCN0165) e Automações Industriais (CCN0612).",
+          "similaridade": 0.534485936164856
+        },
+        {
+          "id": 2,
+          "pergunta": "Quais matérias são ministradas pela professora Rosianne?",
+          "resposta_esperada": "A professora Rosianne ministra as disciplinas: Programação Estruturada e Linguagens de Programação.",
+          "resposta_gerada": "A professora Rosianne Alves de Souza ministra a disciplina 'Banco de Dados Relacionais' e 'Programação Estruturada'.",
+          "similaridade": 0.7043178677558899
+        },
+        {
+          "id": 3,
+          "pergunta": "Quais matérias são ministradas pelo professor José Torres?",
+          "resposta_esperada": "O professor José Torres ministra as disciplinas: Interface Humano-Computador e Sistemas-Distribuídos.",
+          "resposta_gerada": "Os materiais de programação estão ministrados por Carlos André Batista de Carvalho.",
+          "similaridade": 0.5596188306808472
+        },
+        {
+          "id": 4,
+          "pergunta": "Quais matérias são ministradas pelo professor Erico?",
+          "resposta_esperada": "",
+          "resposta_gerada": "Erico Tonini Freitas ministra as seguintes disciplinas: Computação Gráfica e Visuais (CCN0682), Estruturas de Dados (CCN0417), Sistemas Distribuídos (CCN0593) e Engenharia de Software I/II (CCN0524).",
+          "similaridade": 0.0
+        },
+        {
+          "id": 5,
+          "pergunta": "Quais matérias são ministradas pelo professor Carlos André?",
+          "resposta_esperada": "",
+          "resposta_gerada": "Carlos André ministra as seguintes disciplinas: Bioinformática, Bioinformática e Genômica, Bioinformática II, Bioinformática III, Bioinformática IV, Bioinformática V, Bioinformática VI, Bioinformática VII, Bioinformática VIII, Bioinformática IX, Bioinformática X, Bioinformática XI, Bioinformática XII, Bioinformática XIII, Bioinformática XIV, Bioinformática XV, Bioinformática XVI, Bioinformática XVII, Bioinformática XVIII, Bioinformática XIX, Bioinformática XX, Bioinformática XXI, Bioinformática XXII, Bioinformática XXIII, Bioinformática XXIV, Bioinformática XXV, Bioinformática XXVI, Bioinformática XXVII, Bioinformática XXVIII, Bioinformática XXIX, Bioinformática XXX, Bioinformática XXXI, Bioinformática XXXII, Bioinformática XXXIII, Bioinformática XXXIV, Bioinformática XXXV, Bioinformática XXXVI, Bioinformática XXXVII, Bioinformática XXXVIII, Bioinformática XXXIX, Bioinformática XL, Bioinformática XLI, Bioinformática XLII, Bioinformática XLIII, Bioinformática XLIV, Bioinformática XLV, Bioinformática XLVI, Bioinformática XLVII, Bioinformática XLVIII, Bioinformática XLIX, Bioinformática LXX, Bioinformática LXXX, Bioinformática LXXXI, Bioinformática LXXXII, Bioinformática LXXXIII, Bioinformática LXXXIV, Bioinformática LXXXV, Bioinformática LXXXVI, Bioinformática LXXXVII, Bioinformática LXXXVIII, Bioinformática LXXXIX, Bioinformática XC, Bioinformática CXI, Bioinformática CXX, Bioinformática CXXI, Bioinformática CXXII, Bioinformática CXXIII, Bioinformática CXXIV, Bioinformática CXXV, Bioinformática CXXVI, Bioinformática CXXVII, Bioinformática CXXVIII, Bioinformática CXXIX, Bioinformática CXXX, Bioinformática CXXXI, Bioinformática CXXXII, Bioinformática CXXXIII, Bioinformática CXXXIV, Bioinformática CXXXV, Bioinformática CXXXVI, Bioinformática CXXXVII, Bioinformática CXXXVIII, Bioinformática CXXXIX, Bioinformática CVI, Bioinformática CVII, Bioinformática CVIII, Bioinformática CIX, Bioinformática CXII, Bioinformática CXIII, Bioinformática CXIV, Bioinformática CXV, Bioinformática CXVI, Bioinformática CXVII, Bioinformática CXVIII, Bioinformática CXIX, Bioinformática CXX, Bioinformática CXXI, Bioinformática CXXII, Bioinformática CXXIII, Bioinformática CXXIV, Bioinformática CXXV, Bioinformática CXXVI, Bioinformática CXXVII, Bioinformática CXXVIII, Bioinformática CXXIX, Bioinformática CXXX, Bioinformática CXXXI, Bioinformática CXXXII, Bioinformática CXXXIII, Bioinformática CXXXIV, Bioinformática CXXXV, Bioinformática CXXXVI, Bioinformática CXXXVII, Bioinformática CXXXVIII, Bioinformática CXXXIX, Bioinformática CXL, Bioinformática CLII, Bioinformática CLIII, Bioinformática CLIV, Bioinformática CLV, Bioinformática CLVI, Bioinformática CLVII, Bioinformática CLVIII, Bioinformática CLIX, Bioinformática CLI, Bioinformática CLII, Bioinformática CLIII, Bioinformática CLIV, Bioinformática CLV, Bioinformática CLVI, Bioinformática CLVII, Bioinformática CLVIII, Bioinformática CLIX, Bioinformática CLI.",
+          "similaridade": 0.0
+        }
+      ],
+      "metricas": {
+        "media_similaridade": 0.3596845269203186,
+        "mediana_similaridade": 0.534485936164856,
+        "desvio_padrao": 0.29934839766444626,
+        "min_similaridade": 0.0,
+        "max_similaridade": 0.7043178677558899,
+        "total_questoes": 5
+      }
+    },
+    "fine_tuned": {
+      "nome_modelo": "Fine-Tuned Model",
+      "resultados": [
+        {
+          "id": 1,
+          "pergunta": "Quais matérias são ministradas pelo professor André Soares?",
+          "resposta_esperada": "O professor André Soares ministra as disciplinas: Redes de Computadores.",
+          "resposta_gerada": "As disciplinas ministradas pelo professor André Soares incluem: Bioinformática (CCN0657), Computação Gráfica e Visualização (CCN0418), Redes de Computadores (CCN0329), e Sistemas Embarcados (CCN0516).",
+          "similaridade": 0.5753690004348755
+        },
+        {
+          "id": 2,
+          "pergunta": "Quais matérias são ministradas pela professora Rosianne?",
+          "resposta_esperada": "A professora Rosianne ministra as disciplinas: Programação Estruturada e Linguagens de Programação.",
+          "resposta_gerada": "As disciplinas ministradas pelo professor Rosianne Alves de Souza incluem: Bioinformática e Computação Molecular (CCN0521), Bioinformática e Evolução (CCN0483), Bioinformática para Genetistas (CCN0675), Bioinformática II (CCN0592), Bioinformática III (CCN0593), Bioinformática IV (CCN0594), Bioinformática V (CCN0595), Bioinformática VI (CCN0596) e Bioinformática VII (CCN0597).",
+          "similaridade": 0.28368377685546875
+        },
+        {
+          "id": 3,
+          "pergunta": "Quais matérias são ministradas pelo professor José Torres?",
+          "resposta_esperada": "O professor José Torres ministra as disciplinas: Interface Humano-Computador e Sistemas-Distribuídos.",
+          "resposta_gerada": "As materias ministradas pelo professor José Torres incluem: Computação Gráfica (CCN0641), Estruturas de Dados e Algoritmos (CCN0582), Sistemas Operacionais (CCN0793), Programação Funcional (CCN0551), Linguagens de Programação (CCN0552) e Introdução à Ciência da Computação (CCN001).",
+          "similaridade": 0.5252504348754883
+        },
+        {
+          "id": 4,
+          "pergunta": "Quais matérias são ministradas pelo professor Erico?",
+          "resposta_esperada": "",
+          "resposta_gerada": "As disciplinas ministradas pelo professor Erico Leão de Souza incluem: 1) Tópicos em Bioinformática (TBMBI); 2) Bioinformática e Computação Científica; 3) Bioinformática e Programação Estruturada; 4) Bioinformática e Programação Funcional; 5) Bioinformática e Linguagens de Programação; 6) Bioinformática e Lógica de Programação; além de outras tarefas complementares para o curso de Bioinformática.",
+          "similaridade": 0.0
+        },
+        {
+          "id": 5,
+          "pergunta": "Quais matérias são ministradas pelo professor Carlos André?",
+          "resposta_esperada": "",
+          "resposta_gerada": "Carlos André ministra as seguintes materias: Bioinformática (BIO0483), Bioinformática II (BIO0562), Bioinformática III (BIO0713) e Bioinformática IV (BIO0714).",
+          "similaridade": 0.0
+        }
+      ],
+      "metricas": {
+        "media_similaridade": 0.2768606424331665,
+        "mediana_similaridade": 0.28368377685546875,
+        "desvio_padrao": 0.24663937828610105,
+        "min_similaridade": 0.0,
+        "max_similaridade": 0.5753690004348755,
+        "total_questoes": 5
+      }
+    }
+  },
+  "comparacao": {
+    "base_model": {
+      "media_similaridade": 0.3596845269203186,
+      "mediana_similaridade": 0.534485936164856,
+      "desvio_padrao": 0.29934839766444626,
+      "min_similaridade": 0.0,
+      "max_similaridade": 0.7043178677558899,
+      "total_questoes": 5
+    },
+    "fine_tuned_model": {
+      "media_similaridade": 0.2768606424331665,
+      "mediana_similaridade": 0.28368377685546875,
+      "desvio_padrao": 0.24663937828610105,
+      "min_similaridade": 0.0,
+      "max_similaridade": 0.5753690004348755,
+      "total_questoes": 5
+    },
+    "melhorias": {
+      "media_similaridade": -0.08282388448715211,
+      "mediana_similaridade": -0.2508021593093872,
+      "min_similaridade": 0.0,
+      "max_similaridade": -0.1289488673210144,
+      "desvio_padrao": 0.05270901937834521
+    }
+  }
+}
